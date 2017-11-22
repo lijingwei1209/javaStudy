@@ -1,0 +1,3 @@
+1、clone项目： git clone 项目地址 （克隆或者下载一个新项目）
+2、下载代码： git pull （把远程代码拉取下来）
+3、提交代码： 先git add --all，(表示添加全部新文件)然后git commit -m "信息说明"，（提交），最后 git push（推送到远程代码库）

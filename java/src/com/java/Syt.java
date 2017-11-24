@@ -2,8 +2,9 @@ package com.java;
 
 public class Syt {
 	public static void main(String[] srgs){
-		System.out.println("好好学习");
-		
+	  
+	 System.out.println("你好");
+	 System.out.println("学习java");
 	}
 
 }

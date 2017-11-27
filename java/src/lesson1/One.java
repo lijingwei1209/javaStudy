@@ -1,8 +1,19 @@
 package lesson1;
 
 public class One {
-	//练习hello world,测试
-	public static void main(String[] args){
-	 System.out.println("你好，涛");		 
+	int score = 94;
+	String sex = "女";
+    if (score>80){
+         if (sex.equals("男")){
+             System.out.println("进入男子组决赛");
+         }else {
+             System.out.println("进入女子组决赛");
+            }
+         }else {
+             System.out.println("淘汰");
+         }
+    
+    
+    		 
 	}
-}
+

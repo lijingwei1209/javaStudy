@@ -1,15 +1,17 @@
 package lesson2;
 
 public class One {
-	//练习运算符
-	public static void main(String[] args){
-	 System.out.println(1+2);	
-	 System.out.println(1<2);		 
-	 System.out.println(true||false);
-	 int a = 2;
-	 System.out.println(a++);
-	 System.out.println(a);
-	 System.out.println(++a);
-	 
+	public void main(String[] args){
+	     int n=6,i,j;
+	     for(i=0;i<=n-1;i++){
+	      for(j=0;j<=n-i-2;j++)
+	     System.out.print("");
+	     System.out.println("*");
+	     }
+	     {
+	     for(j=0;j<=2*i-2;j++)
+	System.out.print("");
+	System.out.println("*");
+	} 
 	}
 }

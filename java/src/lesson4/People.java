@@ -34,7 +34,7 @@ public class People {
 		System.out.println("我计算的数等于"+num);
 		
 		People p2 = new People();//又创建了p2对象
-//		People.sleep();这里保错，类不能调用成员方法了。只能它儿子来调用
+//		People.sleep();这里保错，类不能调用成员方法了。只能它儿 子来调用
 		p2.sleep();
 		
 	}

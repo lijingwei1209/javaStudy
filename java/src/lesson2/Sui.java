@@ -1,7 +1,7 @@
 package lesson2;
 
 public class Sui {
-	public static void main(String[] args){
+	public static void test01(){
 		String str="192.168.0.1";
 		String[]Ant=str.split("\\.");
 		String[]Bnt=str.split("\\.",2);
@@ -16,5 +16,9 @@ public class Sui {
         	System.out.print("["+a+"]");
         }
         System.out.println();
-  }
+	}
+
+     public static void main(String[] args){
+    	 test01();
+     }
 }

@@ -2,15 +2,13 @@ package lesson2;
 
 public class Helloworld {
 	// 外部类中的静态变量score
-    private  int score = 84;
-    // 创建静态内部类
+    private static int scores = 84;
+      // 创建静态内部类
 	public static class SInner{
-		
-        // 内部类中的变量score
+		  // 内部类中的变量score
         int score = 91;
         public void show() {
-        	
-			System.out.println("访问外部类中的score：" +  new .Helloworld.score          );
+        	System.out.println("访问外部类中的score：" + scores    );
 			System.out.println("访问内部类中的score：" + score);
 		}
 	}

@@ -2,15 +2,33 @@ package lesson4;
 
 public class Telphone {
 	
-	float scores;
-	float cpu;
-	float mem;
+	private float scores;
+	private float cpu;
+	private float mem;
 	public static void main(String[] args){
 		Telphone phone = new Telphone();
 	    Telphone phone1 = new Telphone(1.0f,2.0f,3.0f); 
 
 	}
-    public Telphone(){//通过无参的构造方法构造对象
+    public float getScores() {
+		return scores;
+	}
+	public void setScores(float scores) {
+		scores = scores;
+	}
+	public float getCpu() {
+		return cpu;
+	}
+	public void setCpu(float cpu) {
+		this.cpu = cpu;
+	}
+	public float getMem() {
+		return mem;
+	}
+	public void setMem(float mem) {
+		this.mem = mem;
+	}
+	public Telphone(){//通过无参的构造方法构造对象
     	System.out.println("无参的构造方法执行了!");
     }
   //通过有参的构造方法构造对象

@@ -1,19 +1,22 @@
 package test;
 
 public class Test {
-   /**public static void main(String[] args){
-	   for(int i = 1;i<=9;i++){
-		   for(int j = 1;j<=i;j++){
-			   System.out.print(i+"X"+j+"="+(i*j)+"\t");
-			  
-		   }
-		   System.out.println();
+	public static void testAnimalVoico(Animal c){
+		c.voico();
+		if(c instanceof cat){
+			((cat) c).catchmouse();
+		}
+	}
+	 public static void main(String []agrs){
+		   
+		   Animal a = new dog();
+		   Animal b = new cat();
+		   testAnimalVoico(a);
+		   testAnimalVoico(b);
+		   //cat a2 = new cat();//创建对象
+		   cat a2 = (cat)b;//	强制转换
+		   a2.catchmouse();
 	   }
-	   
-	   
-   }*/
-	public Test(){
-		System.out.println("制造一个汽车!");
 	}
 	
-}
+

@@ -1,22 +1,24 @@
 package test;
 
 public class Test {
-	public static void testAnimalVoico(Animal c){
-		c.voico();
-		if(c instanceof cat){
-			((cat) c).catchmouse();
+	public static void main(String[] args) {
+		// 定义一个字符串
+		String s = "aljlkdsflkjsadjfklhasdkjlflkajdflwoiudsafhaasdasd";
+        
+        // 出现次数
+		int num = 0;
+        
+         // 循环遍历每个字符，判断是否是字符 a ，如果是，累加次数
+		for ( int i = 0;i<s.length();i++      )
+		{
+            // 获取每个字符，判断是否是字符a
+			if (   s.charAt(i)=='a'              ) {
+                // 累加统计次数
+				num++; 
+			}
 		}
+		System.out.println("字符a出现的次数：" + num);
 	}
-	 public static void main(String []agrs){
-		   
-		   Animal a = new dog();
-		   Animal b = new cat();
-		   testAnimalVoico(a);
-		   testAnimalVoico(b);
-		   //cat a2 = new cat();//创建对象
-		   cat a2 = (cat)b;//	强制转换
-		   a2.catchmouse();
-	   }
 	}
 	
 

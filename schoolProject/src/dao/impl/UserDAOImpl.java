@@ -31,7 +31,7 @@ public class UserDAOImpl implements UserDAO {
 		// 驱动程序名
 		String driver = "com.mysql.jdbc.Driver";
 		// URL指向要访问的数据库名world
-		String url = "jdbc:mysql://127.0.0.1:33066/mySchool";
+		String url = "jdbc:mysql://localhost:3306/myschool";
 		// MySQL配置时的用户名
 		String user = "root";
 		// MySQL配置时的密码

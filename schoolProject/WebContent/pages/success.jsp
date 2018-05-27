@@ -8,17 +8,12 @@
 <title>study</title>
 </head>
 <body>
-	<!--top start-->
-	<div class="top">servletWeb</div>
-	<!--top end-->
-	<!--main start-->
-	<div class="main">
 
+	<div>
 		<%
 			User user = (User) session.getAttribute("user");
 		%>
-		username:<%=user.getUserName()%>
-		<br> password:<%=user.getUserPwd()%>
+		<h1>登录成功:<%=user.getUserName()%></h1>
 	</div>
 </body>
 </html>

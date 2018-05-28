@@ -9,8 +9,8 @@
 <body> 
    <h1>中文能正常显示不能?!!!!</h1>
    <hr/>
-   <a href="ServletTest/HelloServlet">以Get方式请求HelloServlet</a>
-   <form action="ServletTest/HelloServlet" method="post">
+   <a href="servlet/HelloServlet">以Get方式请求HelloServlet</a>
+   <form action="servlet/HelloServlet" method="post">
    <input type="submit" value="Post方式请求访问HelloServlet" />
    </form>>
 </body>

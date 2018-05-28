@@ -29,8 +29,8 @@ public class SetTest {
   	  //coursesToSelect.add(4, cr3);
   	  Course[] course= {new Course("3","离散数学"),new Course("4","汇编语言")};
   	  coursesToSelect.addAll(Arrays.asList(course));
-  	  Course temp3 = (Course) coursesToSelect.get(3);
-  	  Course temp4 = (Course) coursesToSelect.get(4);
+  	  Course temp3 = (Course) coursesToSelect.get(2);
+  	  Course temp4 = (Course) coursesToSelect.get(3);
   	  //System.out.println("添加了课程:"+temp3.id+":"+temp3.name+";"+
   	  //temp4.id+":"+temp4.name); 
   	  Course[] course2= {new Course("5","高等数学"),new Course("6","大学英语")};
@@ -50,10 +50,29 @@ public class SetTest {
   		 System.out.println("课程:"+cr.id+":"+cr.name);
   	 }
     }
+    /**
+     * 测试List的contains的方法
+     * @param args
+     */
+    public void testListContains(){
+    	//取得备选课程序列的第0个元素
+    	Course course = coursesToSelect.get(0);
+    	//打印输出coursesToSelect是否包含course对象
+    	System.out.println("取得课程:"+course.name);
+    	System.out.println("备选课程中是否包含课程:"+course.name+","+
+    	coursesToSelect.contains(course)); 
+    	//创建一个新的课程的对象,ID和名称,与course对象完全一样
+    	Course course2 = new Course(course.id,course.name);
+    	System.out.println("新创建课程:"+course.name);
+    	System.out.println("备选课程中是否包含课程:"+course2.name+","+
+    	coursesToSelect.contains(course2));
+    	
+    }
 	public static void main(String[] args) {
 		SetTest st = new SetTest();
 		st.testAdd();
-		st.testForEach();
+		st.testListContains();
+		/**
 		//创建一个新的学生对象
 		Student student = new Student("1","小明"); 
 		System.out.println("欢迎学生:"+student.name+"选课!");
@@ -65,13 +84,17 @@ public class SetTest {
 			for(Course cr:st.coursesToSelect){
 				if(cr.id.equals(courseId)){
 					student.courses.add(cr);
+					student.courses.add(cr);
 				}
 			}
 		}
    st.testForEachForSet(student);
+   */
 	}
+	
 	public void testForEachForSet(Student student){
 		//打印输出学生所选的课程!
+		System.out.println("共选择了:"+student.courses.size()+"门课!");
 	for (Course cr : student.courses) {
 		System.out.println("选择了课程:"+cr.id+":"+cr.name);
 		}

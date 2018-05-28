@@ -114,13 +114,13 @@ public class ListTest {
   public static void main(String args[]){
 	  ListTest lt =  new ListTest();
 	  lt.testAdd();
-	 // lt.testGet();
-	 // lt.testForEach();
-	 // lt.testIterator();
-	  //lt.testModify();
-	  //lt.testForEach();
-	 // lt.testRemove();
-	  //lt.testType();
+	  lt.testGet();
 	  lt.testForEach();
+	 lt.testIterator();
+	  lt.testModify();
+	  lt.testForEach();
+	  lt.testRemove();
+	  lt.testType();
+	  //lt.testForEach();
   }
 }

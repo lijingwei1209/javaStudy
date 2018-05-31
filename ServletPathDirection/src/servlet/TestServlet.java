@@ -51,9 +51,8 @@ public class TestServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//请求重定向方式跳转到test.jsp,当前路径是ServletPathDirection/servlet
-		//response.sendRedirect("test.jsp");
-	
-		response.sendRedirect(request.getContextPath());
+		System.out.print(request.getContextPath());
+		response.sendRedirect(request.getContextPath()+"/test.jsp");
 	}
 
 }
